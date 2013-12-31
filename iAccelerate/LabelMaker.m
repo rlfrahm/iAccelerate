@@ -16,7 +16,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        [self setFont:[UIFont boldSystemFontOfSize:12]];
+        [self setFont:[UIFont boldSystemFontOfSize:14]];
         self.textColor = [UIColor whiteColor];
         self.textAlignment = NSTextAlignmentCenter;
         self.text = text;

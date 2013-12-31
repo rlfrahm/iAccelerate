@@ -143,7 +143,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+        //NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
         [segue destinationViewController];
     }
     // Get the new view controller using [segue destinationViewController].

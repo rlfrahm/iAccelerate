@@ -30,27 +30,12 @@
                                 <color key="shadowColor" red="0.65426190179999999" green="0.82753875269999999" blue="0.97276239809999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="2" height="0.0"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Or-gs-kVH" customClass="AccelerationRealtimePlotView">
-                                <rect key="frame" x="13" y="20" width="295" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYO-LG-qRJ" customClass="AccelerationGraphicsView">
-                                <rect key="frame" x="13" y="292" width="295" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="firstTime" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Input" id="yMX-KK-qKh"/>
                     <navigationItem key="navigationItem" id="OYq-Uu-btK"/>
                     <connections>
-                        <outlet property="accelGraphics" destination="vYO-LG-qRJ" id="7ow-bt-frW"/>
-                        <outlet property="accelPlot" destination="5Or-gs-kVH" id="ffu-ie-dH9"/>
                         <outlet property="geesLabel" destination="NAN-ZG-p6y" id="Nlh-km-kK5"/>
                         <outlet property="imageView" destination="zxS-hR-OmV" id="oAK-nY-2qQ"/>
                     </connections>

@@ -8,20 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
-#import "AccelerationGraphicsView.h"
 #import "GenerateRadial.h"
 #import <CoreLocation/CoreLocation.h>
-#import "AccelerationRealtimePlotView.h"
+#import "Graphics.h"
 
 @interface GSViewController : UIViewController <CLLocationManagerDelegate>
 
-@property (weak, nonatomic) IBOutlet AccelerationRealtimePlotView *accelPlot;
 @property (strong, nonatomic) CMMotionManager* motionManager;
 //@property (weak, nonatomic) IBOutlet UILabel *yAxis;
 //@property (weak, nonatomic) IBOutlet UILabel *xAxis;
 //@property (weak, nonatomic) IBOutlet UILabel *zAxis;
 @property (weak, nonatomic) IBOutlet UILabel *geesLabel;
-@property (weak, nonatomic) IBOutlet AccelerationGraphicsView *accelGraphics;
 @property GenerateRadial* gradientView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic) UIImage* image;

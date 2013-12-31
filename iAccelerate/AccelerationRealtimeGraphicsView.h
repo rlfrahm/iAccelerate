@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AccelerationRealtimePlotView : UIView
+@interface AccelerationRealtimeGraphicsView : UIView
 
-@property (nonatomic) double point;
-
--(void)startUp;
+@property (nonatomic) double gees;
+@property (nonatomic) UILabel* geesLabel;
 
 @end

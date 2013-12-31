@@ -109,7 +109,7 @@
     CPTMutableLineStyle* tickLineStyle = [CPTMutableLineStyle lineStyle];
     tickLineStyle.lineColor = [CPTColor whiteColor];
     tickLineStyle.lineWidth = 2.0f;
-    CPTMutableLineStyle* gridLineStyle = [CPTMutableLineStyle lineStyle];
+    //CPTMutableLineStyle* gridLineStyle = [CPTMutableLineStyle lineStyle];
     tickLineStyle.lineColor = [CPTColor blackColor];
     tickLineStyle.lineWidth = 1.0f;
     

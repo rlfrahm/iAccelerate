@@ -29,9 +29,11 @@
     NSDate* start, *stop;
     NSUserDefaults* defaults;
     BOOL isVisible;
+    double g;
+    Graphics* graphics;
 }
 
-@synthesize settingsHelper, location, accelGraphics, accelPlot;
+@synthesize settingsHelper, location;
 
 - (void)viewDidLoad
 {
@@ -67,6 +69,7 @@
                     //self.yAxis.text = [NSString stringWithFormat:@"%.2f",accelerometerData.acceleration.y];
                     //self.zAxis.text = [NSString stringWithFormat:@"%.2f",accelerometerData.acceleration.z];
                     [self drawLinesWithData:_geesMutableArray];
+                    //[self writeText:_geesMutableArray];
                 }
                 
                 [self addEntry:_geesMutableArray];
@@ -86,9 +89,8 @@
     GSAppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
     
-    accelGraphics.backgroundColor = [UIColor clearColor];
-    accelPlot.backgroundColor = [UIColor clearColor];
-    [accelPlot startUp];
+    graphics = [[Graphics alloc] init];
+    [graphics initMainDisplayGraphics:self.view];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -106,14 +108,16 @@
     isVisible = NO;
 }
 
+- (void) writeText:(NSMutableArray*)entry {
+    self.geesLabel.text = [NSString stringWithFormat:@"%.3f G's", g];
+}
+
 - (void) addEntry:(NSMutableArray*)entry {
     double x = [entry[0] doubleValue];
     double y = [entry[1] doubleValue];
     double z = [entry[2] doubleValue];
-    double g = sqrt(x*x + y*y + z*z);
+    g = sqrt(x*x + y*y + z*z);
     double duration = 0;
-    
-    accelPlot.point = g;
     
     if(!mean) {
         mean = g;
@@ -133,24 +137,21 @@
         newEntry.duration = [NSNumber numberWithDouble:duration];
         start = [NSDate date];
     }
-    
-    accelGraphics.gees = g;
-    self.geesLabel.text = [NSString stringWithFormat:@"%.3f G's", g];
     oldGees = mean;
 }
 
 - (void) drawLinesWithData:(NSMutableArray*)mutableArray {
-    CGFloat width = fabs([[mutableArray objectAtIndex:0] floatValue]);
-    CGFloat height = fabs([[mutableArray objectAtIndex:1] floatValue]);
+    //CGFloat width = fabs([[mutableArray objectAtIndex:0] floatValue]);
+    //CGFloat height = fabs([[mutableArray objectAtIndex:1] floatValue]);
     //CGRect rect = CGRectMake((winSize.width/2) - (width/2), (winSize.height/2) - (height/2), width, height);
     //NSLog(@"%f", [[mutableArray objectAtIndex:0] floatValue]);
     
-    accelGraphics.width = width * 10000;
-    accelGraphics.height = height * 10000;
-    [accelGraphics updateGraphics:CGRectMake(0, 0, 100, 100)];
-    [accelPlot drawRect:self.view.frame];
-    [accelPlot setNeedsDisplay];
-    [accelGraphics setNeedsDisplay];
+    //accelGraphics.width = width * 10000;
+    //accelGraphics.height = height * 10000;
+    //[accelGraphics updateGraphics:CGRectMake(0, 0, 100, 100)];
+    graphics.accelGraphicsGees = g;
+    [graphics updateMainDisplayGraphics:self.view];
+    //[accelGraphics setNeedsDisplay];
 }
 
 #pragma mark Location Stuff
