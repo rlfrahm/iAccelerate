@@ -44,10 +44,10 @@
 		4D60F5D8186E1DD500DD54DB /* AltimeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D60F5D7186E1DD500DD54DB /* AltimeterView.m */; };
 		4D60F5DB186E2DFA00DD54DB /* LabelMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D60F5DA186E2DFA00DD54DB /* LabelMaker.m */; };
 		4D60F5DE186F2FDD00DD54DB /* CompassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D60F5DD186F2FDD00DD54DB /* CompassView.m */; };
-		4D7AD1051868F25200AAE965 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7AD1041868F25200AAE965 /* UIImage+ImageEffects.m */; };
 		4D7AD1071868F57500AAE965 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D7AD1061868F57500AAE965 /* background.jpg */; };
 		4D7AD1091869543100AAE965 /* carbon_fibre.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7AD1081869543100AAE965 /* carbon_fibre.png */; };
 		4D7AD10F1869D68D00AAE965 /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7AD10E1869D68D00AAE965 /* MoreTableViewController.m */; };
+		4D877AD81873340D00AE8B10 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D877AD71873340D00AE8B10 /* UIImage+ImageEffects.m */; };
 		4DC750F71869DB2A00F0FC31 /* SettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC750F61869DB2A00F0FC31 /* SettingsDetailViewController.m */; };
 		4DC750F91869E0BA00F0FC31 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DC750F81869E0BA00F0FC31 /* Settings.plist */; };
 		4DC75100186A32DD00F0FC31 /* AltimeterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC750FF186A32DD00F0FC31 /* AltimeterDetailViewController.m */; };
@@ -202,12 +202,12 @@
 		4D60F5DA186E2DFA00DD54DB /* LabelMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelMaker.m; sourceTree = "<group>"; };
 		4D60F5DC186F2FDD00DD54DB /* CompassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassView.h; sourceTree = "<group>"; };
 		4D60F5DD186F2FDD00DD54DB /* CompassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassView.m; sourceTree = "<group>"; };
-		4D7AD1031868F25200AAE965 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "../../../../Downloads/UIImageEffects/UIImageEffects/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		4D7AD1041868F25200AAE965 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../../../../Downloads/UIImageEffects/UIImageEffects/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		4D7AD1061868F57500AAE965 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../../../Downloads/background.jpg; sourceTree = "<group>"; };
 		4D7AD1081869543100AAE965 /* carbon_fibre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carbon_fibre.png; path = ../../../../Downloads/carbon_fibre/carbon_fibre.png; sourceTree = "<group>"; };
 		4D7AD10D1869D68D00AAE965 /* MoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewController.h; sourceTree = "<group>"; };
 		4D7AD10E1869D68D00AAE965 /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewController.m; sourceTree = "<group>"; };
+		4D877AD61873340D00AE8B10 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		4D877AD71873340D00AE8B10 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		4DC750F51869DB2A00F0FC31 /* SettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDetailViewController.h; sourceTree = "<group>"; };
 		4DC750F61869DB2A00F0FC31 /* SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDetailViewController.m; sourceTree = "<group>"; };
 		4DC750F81869E0BA00F0FC31 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
@@ -259,8 +259,8 @@
 		4D1D0D69186C8D6100223971 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				4D7AD1031868F25200AAE965 /* UIImage+ImageEffects.h */,
-				4D7AD1041868F25200AAE965 /* UIImage+ImageEffects.m */,
+				4D877AD61873340D00AE8B10 /* UIImage+ImageEffects.h */,
+				4D877AD71873340D00AE8B10 /* UIImage+ImageEffects.m */,
 				4DC75111186B2EF600F0FC31 /* SettingsHelper.h */,
 				4DC75112186B2EF600F0FC31 /* SettingsHelper.m */,
 				4D60F5D9186E2DFA00DD54DB /* LabelMaker.h */,
@@ -694,13 +694,13 @@
 				4D60F5DE186F2FDD00DD54DB /* CompassView.m in Sources */,
 				4DE500EC186FD9C20093148E /* MainCollectionFlowLayout.m in Sources */,
 				4D585EC4185BDB5D00BD9443 /* GSAppDelegate.m in Sources */,
+				4D877AD81873340D00AE8B10 /* UIImage+ImageEffects.m in Sources */,
 				4DC750F71869DB2A00F0FC31 /* SettingsDetailViewController.m in Sources */,
 				4D59C7F71860034900AB6F66 /* GeesDetailViewController.m in Sources */,
 				4D59C7F4186000AB00AB6F66 /* AccelerationStaticGraphicsView.m in Sources */,
 				4D23F497187315E700BD1570 /* Graphics.m in Sources */,
 				4D585ECD185BDB5D00BD9443 /* GSViewController.m in Sources */,
 				4D60F5D2186D3F1100DD54DB /* LocationDataTableView.m in Sources */,
-				4D7AD1051868F25200AAE965 /* UIImage+ImageEffects.m in Sources */,
 				4DC75106186A331400F0FC31 /* LeaderboardDetailViewController.m in Sources */,
 				4DC75100186A32DD00F0FC31 /* AltimeterDetailViewController.m in Sources */,
 				4D60F5D8186E1DD500DD54DB /* AltimeterView.m in Sources */,
