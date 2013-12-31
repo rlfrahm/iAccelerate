@@ -185,7 +185,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Graph" image="polyline.png" id="KDt-Yr-5mN"/>
+                    <tabBarItem key="tabBarItem" title="Graph" id="KDt-Yr-5mN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIU-2U-3Wd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -419,9 +419,6 @@
             <point key="canvasLocation" x="352" y="1133"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="polyline.png" width="50" height="50"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
